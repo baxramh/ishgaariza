@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ish Ariza - 97 510 33 86</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #4a6fa5 0%, #2e4a76 100%);
+            color: white;
+            padding: 25px;
+            text-align: center;
+            position: relative;
+        }
+
+        .contact-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #28a745;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .telegram-info {
+            background: #0088cc;
+            color: white;
+            padding: 10px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .form-container {
+            padding: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: #4a6fa5;
+            box-shadow: 0 0 0 3px rgba(74, 111, 165, 0.1);
+        }
+
+        .btn {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #4a6fa5 0%, #2e4a76 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(74, 111, 165, 0.3);
+        }
+
+        .btn-success {
+            background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
+            color: white;
+        }
+
+        .btn-telegram {
+            background: #0088cc;
+            color: white;
+            margin-top: 10px;
+        }
+
+        .status {
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+            display: none;
+        }
+
+        .status.success {
+            background: #d4edda;
+            color: #155724;
+            display: block;
+        }
+
+        .status.error {
+            background: #f8d7da;
+            color: #721c24;
+            display: block;
+        }
+
+        .info-box {
+            background: #e8f4ff;
+            border-left: 4px solid #4a6fa5;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .contact-options {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .contact-btn {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            background: #f8f9fa;
+            color: #333;
+            text-decoration: none;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: all 0.3s;
+        }
+
+        .contact-btn:hover {
+            background: #4a6fa5;
+            color: white;
+        }
+
+        .whatsapp { background: #25D366; color: white; }
+        .telegram { background: #0088cc; color: white; }
+        .phone { background: #28a745; color: white; }
+
+        @media (max-width: 480px) {
+            .form-container {
+                padding: 20px;
+            }
+            
+            .contact-options {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="contact-badge">
+                <i class="fas fa-phone-alt"></i>
+                <span>97 510 33 86</span>
+            </div>
+            
+            <h1>📨 Ish Ariza Formasi</h1>
+            <p>Arizalar to'g'ridan-to'g'ri sizga yuboriladi</p>
+        </div>
+        
+        <!-- Telegram Info -->
+        <div class="telegram-info">
+            <i class="fab fa-telegram"></i>
+            <span>Arizalar Telegram lichkangizga yuboriladi</span>
+        </div>
+        
+        <!-- Info Box -->
+        <div class="form-container">
+            <div class="info-box">
+                <h3><i class="fas fa-info-circle"></i> Ma'lumot</h3>
+                <p>Ish arizangiz to'g'ridan-to'g'ri <strong>97 510 33 86</strong> raqamiga bog'langan Telegram lichkaga yuboriladi.</p>
+            </div>
+        
+            <!-- Form -->
+            <form id="telegramApplicationForm">
+                <div class="form-group">
+                    <label for="fullName"><i class="fas fa-user"></i> To'liq Ism</label>
+                    <input type="text" id="fullName" class="form-control" 
+                           placeholder="Ali Aliyev" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone"><i class="fas fa-phone-alt"></i> Telefon Raqam</label>
+                    <input type="tel" id="phone" class="form-control" 
+                           placeholder="+998 90 123 45 67" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="position"><i class="fas fa-briefcase"></i> Qaysi Lavozimga?</label>
+                    <select id="position" class="form-control" required>
+                        <option value="">Tanlang</option>
+                        <option value="dasturchi">Web Dasturchi</option>
+                        <option value="dizayner">Grafik Dizayner</option>
+                        <option value="menejer">Marketing Menejer</option>
+                        <option value="buxgalter">Buxgalter</option>
+                        <option value="sotuvchi">Sotuvchi</option>
+                        <option value="operator">Operator</option>
+                        <option value="boshqa">Boshqa</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="experience"><i class="fas fa-chart-line"></i> Ish Tajribasi</label>
+                    <select id="experience" class="form-control">
+                        <option value="">Tajribani tanlang</option>
+                        <option value="tajribasiz">Tajribasiz</option>
+                        <option value="1-yil">1 yil</option>
+                        <option value="1-3-yil">1-3 yil</option>
+                        <option value="3-5-yil">3-5 yil</option>
+                        <option value="5+-yil">5+ yil</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message"><i class="fas fa-comment"></i> Qo'shimcha Ma'lumot</label>
+                    <textarea id="message" class="form-control" rows="4" 
+                              placeholder="O'zingiz haqingizda qisqacha, qanday ish qilmoqchisiz?"></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">
+                    <i class="fab fa-telegram"></i> Telegramga Yuborish
+                </button>
+            </form>
+            
+            <!-- Contact Options -->
+            <div class="contact-options">
+                <a href="tel:+998975103386" class="contact-btn phone">
+                    <i class="fas fa-phone-alt"></i> Qo'ng'iroq
+                </a>
+                <a href="https://t.me/+998975103386" target="_blank" class="contact-btn telegram">
+                    <i class="fab fa-telegram"></i> Telegram
+                </a>
+                <a href="https://wa.me/998975103386" target="_blank" class="contact-btn whatsapp">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+            
+            <!-- Status Message -->
+            <div class="status" id="statusMessage"></div>
+            
+            <!-- Info -->
+            <div style="margin-top: 20px; text-align: center; color: #666; font-size: 0.9rem;">
+                <p><i class="fas fa-shield-alt"></i> Ma'lumotlaringiz maxfiy saqlanadi</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // =================== SIZNING TELEGRAM SOZLAMALARINGIZ ===================
+        // BU YERGA O'Z TELEGRAM TOKEN VA CHAT ID NI QO'YING
+        const telegramConfig = {
+            // Bot tokenini @BotFather dan oling
+            botToken: '6350186274:AAEtakB2PTfhhI0HE3p-4i6Hd_rVqst9_wc', // O'zingizning token
+            // Sizning Telegram chat ID (97 510 33 86 raqamiga bog'langan)
+            chatId: '7026753789' // O'zingizning chat ID
+        };
+
+        // =================== DASTUR YUKLANSA ===================
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log("Ish ariza sahifasi yuklandi!");
+            console.log("Telefon: 97 510 33 86");
+            console.log("Telegram sozlamalari:", telegramConfig);
+            
+            // Formani qabul qilish
+            const form = document.getElementById('telegramApplicationForm');
+            form.addEventListener('submit', handleFormSubmit);
+            
+            // Telefon raqamini avtomatik formatlash
+            document.getElementById('phone').addEventListener('input', formatPhoneNumber);
+        });
+
+        // =================== TELEFON RAQAMINI FORMATLASH ===================
+        function formatPhoneNumber() {
+            let phone = this.value.replace(/\D/g, '');
+            
+            if (phone.startsWith('998')) {
+                phone = '+' + phone;
+            } else if (phone.startsWith('97') && phone.length >= 9) {
+                phone = '+998' + phone;
+            }
+            
+            // Format: +998 XX XXX XX XX
+            if (phone.length > 4) {
+                phone = phone.replace(/(\+\d{3})(\d{2})(\d{3})(\d{2})(\d{2})/, '$1 $2 $3 $4 $5');
+            }
+            
+            this.value = phone;
+        }
+
+        // =================== FORM YUBORISH ===================
+        async function handleFormSubmit(e) {
+            e.preventDefault();
+            
+            // Form ma'lumotlari
+            const formData = {
+                fullName: document.getElementById('fullName').value.trim(),
+                phone: document.getElementById('phone').value.trim(),
+                position: document.getElementById('position').value,
+                experience: document.getElementById('experience').value,
+                message: document.getElementById('message').value.trim(),
+                timestamp: new Date().toLocaleString('uz-UZ'),
+                date: new Date().toISOString().split('T')[0],
+                time: new Date().toLocaleTimeString('uz-UZ'),
+                ip: await getIPAddress(),
+                userAgent: navigator.userAgent
+            };
+            
+            // Validatsiya
+            if (!validateForm(formData)) {
+                return;
+            }
+            
+            // Telegramga yuborish
+            await sendToTelegram(formData);
+        }
+
+        // =================== FORM VALIDATSIYASI ===================
+        function validateForm(data) {
+            // Ism
+            if (!data.fullName || data.fullName.length < 3) {
+                showStatus('❌ Iltimos, to\'liq ismingizni kiriting (kamida 3 harf)', 'error');
+                document.getElementById('fullName').focus();
+                return false;
+            }
+            
+            // Telefon
+            const phoneRegex = /^\+998\s?\d{2}\s?\d{3}\s?\d{2}\s?\d{2}$/;
+            const cleanPhone = data.phone.replace(/\s/g, '');
+            
+            if (!phoneRegex.test(cleanPhone)) {
+                showStatus('❌ Iltimos, to\'g\'ri telefon raqam kiriting (+998 97 510 33 86 formatida)', 'error');
+                document.getElementById('phone').focus();
+                return false;
+            }
+            
+            // Lavozim
+            if (!data.position) {
+                showStatus('❌ Iltimos, lavozimni tanlang', 'error');
+                document.getElementById('position').focus();
+                return false;
+            }
+            
+            return true;
+        }
+
+        // =================== TELEGRAMGA YUBORISH ===================
+        async function sendToTelegram(data) {
+            showStatus('⏳ Telegramga yuborilmoqda...', 'info');
+            
+            // Agar token o'rnatilmagan bo'lsa
+            if (!telegramConfig.botToken || telegramConfig.botToken.includes('YOUR_TOKEN')) {
+                showStatus('⚠️ Telegram bot sozlanmagan. Iltimos, @BotFather dan token oling', 'error');
+                return;
+            }
+            
+            // Xabar tayyorlash
+            const telegramMessage = `
+🎯 *YANGI ISH ARIZASI* 🎯
+
+👤 *Ism:* ${data.fullName}
+📞 *Telefon:* ${data.phone}
+📱 *Sizga:* 97 510 33 86
+
+💼 *Lavozim:* ${getPositionName(data.position)}
+📊 *Tajriba:* ${data.experience ? getExperienceName(data.experience) : "Ko'rsatilmagan"}
+
+📝 *Xabar:*
+${data.message || "Qo'shimcha ma'lumot kiritilmagan"}
+
+⏰ *Vaqt:* ${data.timestamp}
+📅 *Sana:* ${data.date}
+🕒 *Soat:* ${data.time}
+
+🌐 *IP:* ${data.ip}
+🖥️ *Qurilma:* ${getDeviceInfo()}
+
+✅ *Ariza qabul qilindi!*
+🔔 *97 510 33 86 ga javob bering*
+            `;
+            
+            try {
+                // Telegram API ga so'rov
+                const response = await fetch(
+                    `https://api.telegram.org/bot${telegramConfig.botToken}/sendMessage`,
+                    {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            chat_id: telegramConfig.chatId,
+                            text: telegramMessage,
+                            parse_mode: 'Markdown',
+                            disable_web_page_preview: true
+                        })
+                    }
+                );
+                
+                const result = await response.json();
+                
+                if (result.ok) {
+                    // Muvaffaqiyatli
+                    showStatus('✅ Ariza 97 510 33 86 ga muvaffaqiyatli yuborildi!', 'success');
+                    
+                    // Formani tozalash
+                    document.getElementById('telegramApplicationForm').reset();
+                    
+                    // LocalStorage ga saqlash
+                    saveApplicationLocally(data);
+                    
+                    // Qo'shimcha xabar (agar kerak bo'lsa)
+                    setTimeout(() => {
+                        showStatus('📞 Tez orada siz bilan bog\'lanamiz!', 'success');
+                    }, 2000);
+                    
+                } else {
+                    // Xatolik
+                    let errorMsg = '❌ Xatolik yuz berdi';
+                    if (result.description) {
+                        errorMsg += ': ' + result.description;
+                    }
+                    showStatus(errorMsg, 'error');
+                }
+                
+            } catch (error) {
+                showStatus('❌ Internet aloqasi bilan muammo', 'error');
+                console.error('Yuborish xatosi:', error);
+            }
+        }
+
+        // =================== YORDAMCHI FUNKSIYALAR ===================
+        function showStatus(message, type) {
+            const statusEl = document.getElementById('statusMessage');
+            statusEl.textContent = message;
+            statusEl.className = 'status ' + type;
+            statusEl.style.display = 'block';
+            
+            // Agar muvaffaqiyatli bo'lsa, 7 soniyadan keyin yashir
+            if (type === 'success') {
+                setTimeout(() => {
+                    statusEl.style.display = 'none';
+                }, 7000);
+            }
+        }
+
+        function getPositionName(positionCode) {
+            const positions = {
+                'dasturchi': 'Web Dasturchi',
+                'dizayner': 'Grafik Dizayner',
+                'menejer': 'Marketing Menejer',
+                'buxgalter': 'Buxgalter',
+                'sotuvchi': 'Sotuvchi',
+                'operator': 'Operator',
+                'boshqa': 'Boshqa lavozim'
+            };
+            return positions[positionCode] || positionCode;
+        }
+
+        function getExperienceName(expCode) {
+            const experiences = {
+                'tajribasiz': 'Tajribasiz',
+                '1-yil': '1 yil',
+                '1-3-yil': '1-3 yil',
+                '3-5-yil': '3-5 yil',
+                '5+-yil': '5+ yil'
+            };
+            return experiences[expCode] || expCode;
+        }
+
+        function getDeviceInfo() {
+            const ua = navigator.userAgent;
+            if (/mobile/i.test(ua)) return 'Mobil';
+            if (/tablet/i.test(ua)) return 'Planshet';
+            return 'Kompyuter';
+        }
+
+        async function getIPAddress() {
+            try {
+                const response = await fetch('https://api.ipify.org?format=json');
+                const data = await response.json();
+                return data.ip;
+            } catch {
+                return 'Noma\'lum';
+            }
+        }
+
+        function saveApplicationLocally(data) {
+            try {
+                const applications = JSON.parse(localStorage.getItem('ishArizalari97')) || [];
+                const newApp = {
+                    id: Date.now(),
+                    ...data,
+                    savedAt: new Date().toISOString()
+                };
+                
+                applications.push(newApp);
+                localStorage.setItem('ishArizalari97', JSON.stringify(applications));
+                
+                console.log('Ariza saqlandi. Jami:', applications.length);
+            } catch (error) {
+                console.error('Saqlash xatosi:', error);
+            }
+        }
+
+        // =================== TEST FUNKSIYALARI ===================
+        function testSendMessage() {
+            const testData = {
+                fullName: 'Test Ism',
+                phone: '+998 97 510 33 86',
+                position: 'dasturchi',
+                experience: '1-3-yil',
+                message: 'Bu test xabari. Ish arizasi tizimi ishlayaptimi tekshirish uchun.',
+                timestamp: new Date().toLocaleString('uz-UZ'),
+                date: new Date().toISOString().split('T')[0],
+                time: new Date().toLocaleTimeString('uz-UZ')
+            };
+            
+            sendToTelegram(testData);
+        }
+
+        function fillTestForm() {
+            document.getElementById('fullName').value = 'Testov Test';
+            document.getElementById('phone').value = '+998 90 123 45 67';
+            document.getElementById('position').value = 'dasturchi';
+            document.getElementById('experience').value = '1-3-yil';
+            document.getElementById('message').value = 'Men JavaScript, HTML, CSS, React, Node.js bilaman. 2 yillik tajribam bor. Loyihalarim GitHub da mavjud.';
+            
+            console.log('Test ma\'lumotlari formaga yuklandi');
+        }
+
+        function viewSavedApplications() {
+            const apps = JSON.parse(localStorage.getItem('ishArizalari97')) || [];
+            alert(`Saqangan arizalar: ${apps.length} ta\n\nKonsolda ko'ring`);
+            console.table(apps);
+        }
+
+        // =================== KONSOL BUYRUG'LARI ===================
+        console.log('🚀 Ish Ariza Tizimi Ishga Tushdi!');
+        console.log('📞 Telefon: 97 510 33 86');
+        console.log('🔧 Foydali buyruqlar:');
+        console.log('1. fillTestForm() - test ma\'lumotlari bilan to\'ldirish');
+        console.log('2. testSendMessage() - test xabar yuborish');
+        console.log('3. viewSavedApplications() - saqlangan arizalarni ko\'rish');
+        console.log('4. sendToTelegram(data) - ma\'lumotlarni yuborish');
+        
+        // Avtomatik test ma'lumotlari (agar kerak bo'lsa)
+        // setTimeout(fillTestForm, 1000);
+    </script>
+</body>
+</html>
